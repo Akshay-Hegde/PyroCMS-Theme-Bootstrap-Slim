@@ -1,3 +1,21 @@
-<ul>
-	{{ navigation:links group="header" class="active" }}
-</ul>
+<div class="navbar">
+	<div class="container">
+
+		<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<!-- Be sure to leave the brand out there if you want it shown -->
+		<a class="navbar-brand" href="#">{{ settings:site_name }}</a>
+
+		<!-- Place everything within .nav-collapse to hide it until above 768px -->
+		<div class="nav-collapse collapse navbar-responsive-collapse">
+			<ul class="nav navbar-nav pull-right">
+				{{ navigation:links group="header" class="active" }}
+			</ul>
+		</div><!-- /.nav-collapse -->
+	</div><!-- /.container -->
+</div><!-- /.navbar -->
