@@ -6,7 +6,9 @@
 // Reset the box-sizing
 // -------------------------
 
-* {
+*,
+*:before,
+*:after {
   .box-sizing(border-box);
 }
 
@@ -35,6 +37,14 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+// Reset unusual Firefox-on-Android default style, see https://github.com/necolas/normalize.css/issues/214
+button,
+input,
+select[multiple],
+textarea {
+  background-image: none;
 }
 
 
@@ -79,7 +89,7 @@ img {
 
 // Perfect circle
 .img-circle {
-  border-radius: 500px; // crank the border-radius so it works with most reasonably sized images
+  border-radius: 50%; // set radius in percents
 }
 
 
@@ -93,3 +103,17 @@ hr {
   border-top: 1px solid @hr-border;
 }
 
+// Only display content to screen readers
+// See: http://a11yproject.com/posts/how-to-hide-content/
+// -------------------------
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
