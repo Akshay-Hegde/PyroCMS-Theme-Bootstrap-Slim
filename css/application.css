@@ -1,0 +1,22 @@
+/* Application Specific styles go here (if not using the LESS version). */
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-tablet) { }
+
+/* Medium devices (tablets, 992px and up) */
+@media (min-width: @screen-desktop) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-large-desktop) { }
+
+/* Phone only */
+@media (max-width: @screen-phone-max) { }
+
+/* Tablet only */
+@media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) { }
+
+/* Desktop only */
+@media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) { }
