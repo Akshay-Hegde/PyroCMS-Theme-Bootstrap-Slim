@@ -1,5 +1,8 @@
 <h1><?php echo lang('user:register_header') ?></h1>
 
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+
 <?php if ( ! empty($error_string)):?>
 <!-- Woops... -->
 <div class="alert alert-danger">
@@ -46,3 +49,6 @@
 	<?php echo form_submit('btnSubmit', lang('user:register_btn'), 'class="btn btn-default"') ?>
 
 <?php echo form_close() ?>
+
+</div>
+</div>

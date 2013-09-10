@@ -1,5 +1,5 @@
-<h2 class="page-title"><?php echo lang('user:password_reset_title')?></h2>
+<h1><?php echo lang('user:password_reset_title')?></h1>
 
-<div class="success-box">
+<div class="alert alert-success">
     <?php echo lang('user:password_reset_message') ?>
 </div>
