@@ -33,9 +33,9 @@
                     	
 						{{ entries }}
                     	
-						{{ singular }}: {{ title }}
+						<h3>{{ singular }}: <a href="{{ url }}">{{ title }}</a></h3>
                     	
-						{{ description }}
+						{{ helper:word_limiter string=description words="40" }}
                     	
 						{{ /entries }}
                     	
