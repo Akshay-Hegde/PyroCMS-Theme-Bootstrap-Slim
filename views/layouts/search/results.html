@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="{{ lang:code }}">
+
+<head>
+	{{ theme:partial name="metadata" }}
+</head>
+
+<body class="{{ url:segments segment="1" default="home" }}">
+
+	<header>
+		{{ theme:partial name="navigation" }}
+		{{ theme:partial name="header" }}
+	</header>
+	
+	<section>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+
+					<h1>Search Results</h1>
+
+					{{ search:form class="search-form" }}
+					<div class="form-group">
+						<input name="q" placeholder="Search terms..." class="form-control" value="{{ query }}">
+					</div>
+					{{ /search:form }}
+
+					{{ search:results }}
+
+						<h2>{{ total }} results for "{{ query }}.</h2>
+                    	
+						{{ entries }}
+                    	
+						<h3>{{ singular }}: <a href="{{ url }}">{{ title }}</a></h3>
+                    	
+						{{ helper:word_limiter string=description words="40" }}
+                    	
+						{{ /entries }}
+                    	
+						{{ pagination }}
+
+					{{ /search:results }}
+
+				</div>
+			</div>
+		</div>
+
+	</section>		
+		
+	<footer>
+		{{ theme:partial name="footer" }}
+	</footer>
+	
+</body>
+</html>
+
+
+
