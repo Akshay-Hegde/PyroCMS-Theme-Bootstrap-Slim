@@ -1,5 +1,4 @@
-<h2 id="page_title">{{ helper:lang line="blog:archive_title" }}</h2>
-<h3>{{ month_year }}</h3>
+<h2>Archives for {{ month_year }}</h2>
 
 {{ if posts }}
 
@@ -11,30 +10,18 @@
 
 			<div class="meta">
 
-			<div class="date">
-				{{ helper:lang line="blog:posted_label" }}
-				<span>{{ helper:date timestamp=created_on }}</span>
-			</div>
-
-			{{ if category }}
-			<div class="category">
-				{{ helper:lang line="blog:category_label" }}
-				<span><a href="{{ url:site }}blog/category/{{ category:slug }}">{{ category:title }}</a></span>
-			</div>
-			{{ endif }}
-
-			{{ if keywords }}
-			<div class="keywords">
-				{{ keywords }}
-					<span><a href="{{ url:site }}blog/tagged/{{ keyword }}">{{ keyword }}</a></span>
-				{{ /keywords }}
-			</div>
-			{{ endif }}
+				<div class="date text-muted">{{ helper:date timestamp=created_on }}</div>
+            	
+				{{ if category }}
+				<div class="category">
+					<abbr title="Category">C:</abbr> <a href="{{ url:site }}blog/category/{{ category:slug }}">{{ category:title }}</a>
+				</div>
+				{{ endif }}
 
 			</div>
 
 			<div class="preview">
-			{{ preview }}
+				{{ preview }}
 			</div>
 
 			<p><a href="{{ url }}">{{ helper:lang line="blog:read_more_label" }}</a></p>

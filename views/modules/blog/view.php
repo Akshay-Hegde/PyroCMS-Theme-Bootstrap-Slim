@@ -1,17 +1,12 @@
-
-
 {{ post }}
 
 <div class="post">
 
-	<h3>{{ title }}</h3>
+	<h2>{{ title }}</h2>
 
 	<div class="meta">
 
-		<div class="date">
-			{{ helper:lang line="blog:posted_label" }}
-			<span>{{ helper:date timestamp=created_on }}</span>
-		</div>
+		<div class="date text-muted">{{ helper:date timestamp=created_on }}</div>
 
 		<div class="author">
 			{{ helper:lang line="blog:written_by_label" }}
@@ -20,15 +15,15 @@
 
 		{{ if category }}
 		<div class="category">
-			{{ helper:lang line="blog:category_label" }}
-			<span><a href="{{ url:site }}blog/category/{{ category:slug }}">{{ category:title }}</a></span>
+			<abbr title="Category">C:</abbr> <a href="{{ url:site }}blog/category/{{ category:slug }}">{{ category:title }}</a>
 		</div>
 		{{ endif }}
 
 		{{ if keywords }}
 		<div class="keywords">
+			<abbr title="Keywords">K:</abbr>
 			{{ keywords }}
-				<span><a href="{{ url:site }}blog/tagged/{{ keyword }}">{{ keyword }}</a></span>
+				<a href="{{ url:site }}blog/tagged/{{ keyword }}">{{ keyword }}</a>
 			{{ /keywords }}
 		</div>
 		{{ endif }}
