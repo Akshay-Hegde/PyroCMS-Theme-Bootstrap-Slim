@@ -48,7 +48,7 @@
 	</div>
 	
 	<div class="form-group">
-		<label for="password"><?php echo lang('global:password') ?></label><br/>
+		<label for="password"><?php echo lang('global:password') ?></label><br>
 		<?php echo form_password('password', '', 'autocomplete="off" class="form-control"') ?>
 	</div>
 
@@ -78,7 +78,7 @@
 		<ul>
 			<li <?php $api_key or print('style="display:none"') ?>><?php echo sprintf(lang('api:key_message'), '<span id="api_key">'.$api_key.'</span>') ?></li>
 			<li>
-				<input type="button" id="generate_api_key" value="<?php echo lang('api:generate_key') ?>" />
+				<input type="button" id="generate_api_key" value="<?php echo lang('api:generate_key') ?>">
 			</li>
 		</ul>
 	

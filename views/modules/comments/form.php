@@ -11,17 +11,17 @@
 
 			<div class="form_name form-group">
 				<label for="name"><?php echo lang('comments:name_label') ?><span class="required">*</span></label>
-				<input type="text" class="form-control" name="name" id="name" maxlength="40" value="<?php echo $comment['name'] ?>" />
+				<input type="text" class="form-control" name="name" id="name" maxlength="40" value="<?php echo $comment['name'] ?>">
 			</div>
 
 			<div class="form_email form-group">
 				<label for="email"><?php echo lang('global:email') ?><span class="required">*</span></label>
-				<input type="text" class="form-control" name="email" maxlength="40" value="<?php echo $comment['email'] ?>" />
+				<input type="text" class="form-control" name="email" maxlength="40" value="<?php echo $comment['email'] ?>">
 			</div>
 
 			<div class="form_url form-group">
 				<label for="website"><?php echo lang('comments:website_label') ?></label>
-				<input type="text" class="form-control" name="website" maxlength="40" value="<?php echo $comment['website'] ?>" />
+				<input type="text" class="form-control" name="website" maxlength="40" value="<?php echo $comment['website'] ?>">
 			</div>
 
 	<?php endif ?>
