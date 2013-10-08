@@ -23,7 +23,15 @@
 
 					{{ search:form class="search-form" }}
 					<div class="form-group">
-						<input name="q" placeholder="Search terms..." class="form-control" value="{{ query }}">
+						<div class="row">
+							<div class="col-xs-9 col-sm-11">
+								<input name="q" placeholder="Search terms..." class="form-control" value="{{ query }}">
+							</div>
+
+							<div class="col-xs-3 col-sm-1">
+								<input type="submit" name="submit" value="Go" class="btn btn-default">
+							</div>
+						</div>
 					</div>
 					{{ /search:form }}
 
