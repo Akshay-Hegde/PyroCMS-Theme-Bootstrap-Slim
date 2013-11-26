@@ -1,0 +1,199 @@
+//
+// Grid system
+// --------------------------------------------------
+
+// Set the container width, and override it for fixed navbars in media queries
+.container {
+  .container-fixed();
+}
+
+// mobile first defaults
+.row {
+  .make-row();
+}
+
+// Common styles for small and large grid columns
+.make-grid-columns();
+
+
+// Extra small grid
+//
+// Grid classes for extra small devices like smartphones. No offset, push, or
+// pull classes are present here due to the size of the target.
+//
+// Note that `.col-xs-12` doesn't get floated on purpose--there's no need since
+// it's full-width.
+
+.make-grid-columns-float(xs);
+.make-grid(@grid-columns, xs, width);
+.make-grid(@grid-columns, xs, pull);
+.make-grid(@grid-columns, xs, push);
+.make-grid(@grid-columns, xs, offset);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+//
+// Note that `.col-sm-12` doesn't get floated on purpose--there's no need since
+// it's full-width.
+
+@media (min-width: @screen-sm-min) {
+  .container {
+    width: @container-sm;
+  }
+
+  .make-grid-columns-float(sm);
+  .make-grid(@grid-columns, sm, width);
+  .make-grid(@grid-columns, sm, pull);
+  .make-grid(@grid-columns, sm, push);
+  .make-grid(@grid-columns, sm, offset);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+//
+// Note that `.col-md-12` doesn't get floated on purpose--there's no need since
+// it's full-width.
+
+@media (min-width: @screen-md-min) {
+  .container {
+    width: @container-md;
+  }
+
+<<<<<<< HEAD:less/grid.less
+  .make-grid-columns-float(md);
+  .make-grid(@grid-columns, md, width);
+  .make-grid(@grid-columns, md, pull);
+  .make-grid(@grid-columns, md, push);
+  .make-grid(@grid-columns, md, offset);
+=======
+  // Push and pull columns for source order changes
+  .col-md-push-0  { left: auto; }
+  .col-md-push-1  { left: percentage((1 / @grid-columns)); }
+  .col-md-push-2  { left: percentage((2 / @grid-columns)); }
+  .col-md-push-3  { left: percentage((3 / @grid-columns)); }
+  .col-md-push-4  { left: percentage((4 / @grid-columns)); }
+  .col-md-push-5  { left: percentage((5 / @grid-columns)); }
+  .col-md-push-6  { left: percentage((6 / @grid-columns)); }
+  .col-md-push-7  { left: percentage((7 / @grid-columns)); }
+  .col-md-push-8  { left: percentage((8 / @grid-columns)); }
+  .col-md-push-9  { left: percentage((9 / @grid-columns)); }
+  .col-md-push-10 { left: percentage((10/ @grid-columns)); }
+  .col-md-push-11 { left: percentage((11/ @grid-columns)); }
+
+  .col-md-pull-0  { right: auto; }
+  .col-md-pull-1  { right: percentage((1 / @grid-columns)); }
+  .col-md-pull-2  { right: percentage((2 / @grid-columns)); }
+  .col-md-pull-3  { right: percentage((3 / @grid-columns)); }
+  .col-md-pull-4  { right: percentage((4 / @grid-columns)); }
+  .col-md-pull-5  { right: percentage((5 / @grid-columns)); }
+  .col-md-pull-6  { right: percentage((6 / @grid-columns)); }
+  .col-md-pull-7  { right: percentage((7 / @grid-columns)); }
+  .col-md-pull-8  { right: percentage((8 / @grid-columns)); }
+  .col-md-pull-9  { right: percentage((9 / @grid-columns)); }
+  .col-md-pull-10 { right: percentage((10/ @grid-columns)); }
+  .col-md-pull-11 { right: percentage((11/ @grid-columns)); }
+
+  // Offsets
+  .col-md-offset-0  { margin-left: 0; }
+  .col-md-offset-1  { margin-left: percentage((1 / @grid-columns)); }
+  .col-md-offset-2  { margin-left: percentage((2 / @grid-columns)); }
+  .col-md-offset-3  { margin-left: percentage((3 / @grid-columns)); }
+  .col-md-offset-4  { margin-left: percentage((4 / @grid-columns)); }
+  .col-md-offset-5  { margin-left: percentage((5 / @grid-columns)); }
+  .col-md-offset-6  { margin-left: percentage((6 / @grid-columns)); }
+  .col-md-offset-7  { margin-left: percentage((7 / @grid-columns)); }
+  .col-md-offset-8  { margin-left: percentage((8 / @grid-columns)); }
+  .col-md-offset-9  { margin-left: percentage((9 / @grid-columns)); }
+  .col-md-offset-10 { margin-left: percentage((10/ @grid-columns)); }
+  .col-md-offset-11 { margin-left: percentage((11/ @grid-columns)); }
+>>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/grid.less
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+//
+// Note that `.col-lg-12` doesn't get floated on purpose--there's no need since
+// it's full-width.
+
+<<<<<<< HEAD:less/grid.less
+@media (min-width: @screen-lg-min) {
+  .container {
+    width: @container-lg;
+=======
+@media (min-width: @screen-lg-desktop) {
+  .container {
+    max-width: @container-lg-desktop;
+  }
+
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11 {
+    float: left;
+>>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/grid.less
+  }
+
+<<<<<<< HEAD:less/grid.less
+  .make-grid-columns-float(lg);
+  .make-grid(@grid-columns, lg, width);
+  .make-grid(@grid-columns, lg, pull);
+  .make-grid(@grid-columns, lg, push);
+  .make-grid(@grid-columns, lg, offset);
+=======
+  // Push and pull columns for source order changes
+  .col-lg-push-0  { left: auto; }
+  .col-lg-push-1  { left: percentage((1 / @grid-columns)); }
+  .col-lg-push-2  { left: percentage((2 / @grid-columns)); }
+  .col-lg-push-3  { left: percentage((3 / @grid-columns)); }
+  .col-lg-push-4  { left: percentage((4 / @grid-columns)); }
+  .col-lg-push-5  { left: percentage((5 / @grid-columns)); }
+  .col-lg-push-6  { left: percentage((6 / @grid-columns)); }
+  .col-lg-push-7  { left: percentage((7 / @grid-columns)); }
+  .col-lg-push-8  { left: percentage((8 / @grid-columns)); }
+  .col-lg-push-9  { left: percentage((9 / @grid-columns)); }
+  .col-lg-push-10 { left: percentage((10/ @grid-columns)); }
+  .col-lg-push-11 { left: percentage((11/ @grid-columns)); }
+
+  .col-lg-pull-0  { right: auto; }
+  .col-lg-pull-1  { right: percentage((1 / @grid-columns)); }
+  .col-lg-pull-2  { right: percentage((2 / @grid-columns)); }
+  .col-lg-pull-3  { right: percentage((3 / @grid-columns)); }
+  .col-lg-pull-4  { right: percentage((4 / @grid-columns)); }
+  .col-lg-pull-5  { right: percentage((5 / @grid-columns)); }
+  .col-lg-pull-6  { right: percentage((6 / @grid-columns)); }
+  .col-lg-pull-7  { right: percentage((7 / @grid-columns)); }
+  .col-lg-pull-8  { right: percentage((8 / @grid-columns)); }
+  .col-lg-pull-9  { right: percentage((9 / @grid-columns)); }
+  .col-lg-pull-10 { right: percentage((10/ @grid-columns)); }
+  .col-lg-pull-11 { right: percentage((11/ @grid-columns)); }
+
+  // Offsets
+  .col-lg-offset-0  { margin-left: 0; }
+  .col-lg-offset-1  { margin-left: percentage((1 / @grid-columns)); }
+  .col-lg-offset-2  { margin-left: percentage((2 / @grid-columns)); }
+  .col-lg-offset-3  { margin-left: percentage((3 / @grid-columns)); }
+  .col-lg-offset-4  { margin-left: percentage((4 / @grid-columns)); }
+  .col-lg-offset-5  { margin-left: percentage((5 / @grid-columns)); }
+  .col-lg-offset-6  { margin-left: percentage((6 / @grid-columns)); }
+  .col-lg-offset-7  { margin-left: percentage((7 / @grid-columns)); }
+  .col-lg-offset-8  { margin-left: percentage((8 / @grid-columns)); }
+  .col-lg-offset-9  { margin-left: percentage((9 / @grid-columns)); }
+  .col-lg-offset-10 { margin-left: percentage((10/ @grid-columns)); }
+  .col-lg-offset-11 { margin-left: percentage((11/ @grid-columns)); }
+>>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/grid.less
+}
+
