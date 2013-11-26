@@ -1,9 +1,9 @@
 ## Overview
-This is a PyroCMS theme that can be used to start basic website themes or projects. It uses Bootstrap v3.0.0 ([getbootstrap.com](http://getbootstrap.com)) and has no added style or design.
+This is a PyroCMS theme that can be used to start basic website themes or projects. It uses Bootstrap v3.0.2 ([getbootstrap.com](http://getbootstrap.com)) and has no added style or design.
 
 ## Features
 * Built for the awesome CMS framework PyroCMS ([pyrocms.com](http://pyrocms.com))
-* Built with Bootstrap v3.0.0 ([getbootstrap.com](http://getbootstrap.com))
+* Built with Bootstrap v3.0.2 ([getbootstrap.com](http://getbootstrap.com))
 * Layouts
  * Default
  * Search
