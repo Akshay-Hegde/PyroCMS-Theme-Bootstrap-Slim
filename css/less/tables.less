@@ -91,19 +91,10 @@ th {
       }
     }
   }
-<<<<<<< HEAD:less/tables.less
   > thead > tr {
     > th,
     > td {
       border-bottom-width: 2px;
-=======
-  > thead {
-    > tr {
-      > th,
-      > td {
-        border-bottom-width: 2px;
-      }
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/tables.less
     }
   }
 }
@@ -113,21 +104,10 @@ th {
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
-<<<<<<< HEAD:less/tables.less
 .table-striped > tbody > tr:nth-child(odd) {
   > td,
   > th {
     background-color: @table-bg-accent;
-=======
-.table-striped {
-  > tbody {
-    > tr:nth-child(odd) {
-      > td,
-      > th {
-        background-color: @table-bg-accent;
-      }
-    }
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/tables.less
   }
 }
 
@@ -136,21 +116,10 @@ th {
 //
 // Placed here since it has to come after the potential zebra striping
 
-<<<<<<< HEAD:less/tables.less
 .table-hover > tbody > tr:hover {
   > td,
   > th {
     background-color: @table-bg-hover;
-=======
-.table-hover {
-  > tbody {
-    > tr:hover {
-      > td,
-      > th {
-        background-color: @table-bg-hover;
-      }
-    }
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/tables.less
   }
 }
 
@@ -198,7 +167,6 @@ table {
 
 // Responsive tables
 //
-<<<<<<< HEAD:less/tables.less
 // Wrap your tables in `.table-responsive` and we'll make them mobile friendly
 // by enabling horizontal scrolling. Only applies <768px. Everything above that
 // will display normally.
@@ -216,24 +184,6 @@ table {
     // Tighten up spacing
     > .table {
       margin-bottom: 0;
-=======
-// Wrap your tables in `.table-scrollable` and we'll make them mobile friendly
-// by enabling horizontal scrolling. Only applies <768px. Everything above that
-// will display normally.
-
-@media (max-width: @screen-sm) {
-  .table-responsive {
-    width: 100%;
-    margin-bottom: 15px;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    border: 1px solid @table-border-color;
-
-    // Tighten up spacing and give a background color
-    > .table {
-      margin-bottom: 0;
-      background-color: #fff;
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/tables.less
 
       // Ensure the content doesn't wrap
       > thead,
@@ -266,7 +216,6 @@ table {
             border-right: 0;
           }
         }
-<<<<<<< HEAD:less/tables.less
       }
 
       // Only nuke the last row's bottom-border in `tbody` and `tfoot` since
@@ -274,8 +223,6 @@ table {
       // remove the border altogether.
       > tbody,
       > tfoot {
-=======
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/tables.less
         > tr:last-child {
           > th,
           > td {
@@ -283,10 +230,7 @@ table {
           }
         }
       }
-<<<<<<< HEAD:less/tables.less
 
-=======
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/tables.less
     }
   }
 }

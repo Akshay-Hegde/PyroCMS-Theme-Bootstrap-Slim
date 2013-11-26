@@ -10,7 +10,6 @@
 
 .navbar {
   position: relative;
-  z-index: @zindex-navbar;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
   border: 1px solid transparent;
@@ -75,11 +74,7 @@
     }
 
     &.in {
-<<<<<<< HEAD:less/navbar.less
       overflow-y: auto;
-=======
-      overflow-y: visible;
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/navbar.less
     }
 
     // Account for first and last children spacing
@@ -120,13 +115,9 @@
 
 // Static top (unfixed, but 100% wide) navbar
 .navbar-static-top {
-<<<<<<< HEAD:less/navbar.less
   z-index: @zindex-navbar;
   border-width: 0 0 1px;
 
-=======
-  border-width: 0 0 1px;
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/navbar.less
   @media (min-width: @grid-float-breakpoint) {
     border-radius: 0;
   }
@@ -138,11 +129,7 @@
   position: fixed;
   right: 0;
   left: 0;
-<<<<<<< HEAD:less/navbar.less
   z-index: @zindex-navbar-fixed;
-=======
-  border-width: 0 0 1px;
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/navbar.less
 
   // Undo the rounded corners
   @media (min-width: @grid-float-breakpoint) {
@@ -150,7 +137,6 @@
   }
 }
 .navbar-fixed-top {
-  z-index: @zindex-navbar-fixed;
   top: 0;
   border-width: 0 0 1px;
 }
@@ -168,10 +154,7 @@
   padding: @navbar-padding-vertical @navbar-padding-horizontal;
   font-size: @font-size-large;
   line-height: @line-height-computed;
-<<<<<<< HEAD:less/navbar.less
 
-=======
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/navbar.less
   &:hover,
   &:focus {
     text-decoration: none;
@@ -368,21 +351,12 @@
 
 // Alternate navbars
 // --------------------------------------------------
-<<<<<<< HEAD:less/navbar.less
 
 // Default navbar
 .navbar-default {
   background-color: @navbar-default-bg;
   border-color: @navbar-default-border;
 
-=======
-
-// Default navbar
-.navbar-default {
-  background-color: @navbar-default-bg;
-  border-color: @navbar-default-border;
-
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/navbar.less
   .navbar-brand {
     color: @navbar-default-brand-color;
     &:hover,
@@ -433,7 +407,6 @@
     .icon-bar {
       background-color: @navbar-default-toggle-icon-bar-bg;
     }
-<<<<<<< HEAD:less/navbar.less
   }
 
   .navbar-collapse,
@@ -468,86 +441,6 @@
       border-bottom-color: @navbar-default-link-color;
     }
 
-
-    @media (max-width: @screen-xs-max) {
-      // Dropdowns get custom display when collapsed
-      .open .dropdown-menu {
-        > li > a {
-          color: @navbar-default-link-color;
-          &:hover,
-          &:focus {
-            color: @navbar-default-link-hover-color;
-            background-color: @navbar-default-link-hover-bg;
-          }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: @navbar-default-link-active-color;
-            background-color: @navbar-default-link-active-bg;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: @navbar-default-link-disabled-color;
-            background-color: @navbar-default-link-disabled-bg;
-          }
-        }
-      }
-    }
-  }
-
-
-  // Links in navbars
-  //
-  // Add a class to ensure links outside the navbar nav are colored correctly.
-
-  .navbar-link {
-    color: @navbar-default-link-color;
-    &:hover {
-      color: @navbar-default-link-hover-color;
-    }
-  }
-=======
-  }
-
-  .navbar-collapse,
-  .navbar-form {
-    border-color: darken(@navbar-default-bg, 7%);
-  }
-
-  // Dropdown menu items and carets
-  .navbar-nav {
-    // Caret should match text color on hover
-    > .dropdown > a:hover .caret,
-    > .dropdown > a:focus .caret {
-      border-top-color: @navbar-default-link-hover-color;
-      border-bottom-color: @navbar-default-link-hover-color;
-    }
-
-    // Remove background color from open dropdown
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: @navbar-default-link-active-bg;
-        color: @navbar-default-link-active-color;
-        .caret {
-          border-top-color: @navbar-default-link-active-color;
-          border-bottom-color: @navbar-default-link-active-color;
-        }
-      }
-    }
-    > .dropdown > a .caret {
-      border-top-color: @navbar-default-link-color;
-      border-bottom-color: @navbar-default-link-color;
-    }
->>>>>>> aa8cfd3ee3d04fbd17f0877542d85ee779cf59c9:css/less/navbar.less
-
-}
 
     @media (max-width: @screen-xs-max) {
       // Dropdowns get custom display when collapsed
