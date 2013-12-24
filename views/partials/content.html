@@ -1,4 +1,11 @@
 <div class="container">
+	
+	<div class="row">
+		<div class="col-xs-12">
+			{{ session:messages success="alert alert-success" notice="alert alert-info" error="alert alert-danger" }}
+		</div>
+	</div>
+		
 	<div class="row">
 		<div class="col-xs-12">
 			{{ template:body }}
