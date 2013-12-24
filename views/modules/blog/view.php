@@ -1,8 +1,10 @@
+<h2>Blog</h2>
+
 {{ post }}
 
-<div class="post">
+<h3>{{ title }}</h3>
 
-	<h2>{{ title }}</h2>
+<div class="post">
 
 	<div class="meta">
 

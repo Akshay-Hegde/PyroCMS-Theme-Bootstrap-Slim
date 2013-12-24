@@ -19,7 +19,7 @@
 <!--style-->
 <?php
 
-Asset::css('bootstrap.css');
+Asset::css('bootstrap.min.css');
 Asset::css('application.css');
 
 echo Asset::render_css();
@@ -32,7 +32,24 @@ echo Asset::render_css();
 
 <?php
 
-Asset::js('bootstrap/*');
+// You can trim these as needed or just load the minified script
+Asset::js('bootstrap/affix.js');
+Asset::js('bootstrap/alert.js');
+Asset::js('bootstrap/button.js');
+Asset::js('bootstrap/carousel.js');
+Asset::js('bootstrap/collapse.js');
+Asset::js('bootstrap/dropdown.js');
+Asset::js('bootstrap/modal.js');
+Asset::js('bootstrap/tooltip.js');
+Asset::js('bootstrap/popover.js');
+Asset::js('bootstrap/scrollspy.js');
+Asset::js('bootstrap/tab.js');
+Asset::js('bootstrap/transition.js');
+
+// If you use this make sure to comment out or delete the
+// JS links above
+// Asset::js('bootstrap.min.js');
+
 Asset::js('application.js');
 
 echo Asset::render_js();
