@@ -1,10 +1,12 @@
+<h2>Blog</h2>
+
 {{ if posts }}
 
 	{{ posts }}
 
 		<div class="post">
 
-			<h2><a href="{{ url }}">{{ title }}</a></h2>
+			<h3><a href="{{ url }}">{{ title }}</a></h3>
 
 			<div class="meta">
 
