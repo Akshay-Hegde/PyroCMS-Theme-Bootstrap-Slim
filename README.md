@@ -1,9 +1,9 @@
 ## Overview
-This is a PyroCMS theme that can be used to start basic website themes or projects. It uses Bootstrap v3.1.1 ([getbootstrap.com](http://getbootstrap.com)) and has no added style or design.
+This is a PyroCMS theme that can be used to start basic website themes or projects. It uses Bootstrap v3.2 ([getbootstrap.com](http://getbootstrap.com)) and has no added style or design.
 
 ## Features
 * Built for the awesome CMS framework PyroCMS ([pyrocms.com](http://pyrocms.com))
-* Built with Bootstrap v3.1.1 ([getbootstrap.com](http://getbootstrap.com))
+* Built with Bootstrap v3.2 ([getbootstrap.com](http://getbootstrap.com))
 * Layouts
  * Default
  * Search
@@ -22,7 +22,7 @@ This is a PyroCMS theme that can be used to start basic website themes or projec
 ### Simple Install
 * Simply download the "bootstrap_slim.zip" file
 * Upload the theme using the "Upload" button on the "Theme" page in the PyroCMS admin panel
-* Then active and enjoy
+* Then activate and enjoy
 
 ### Designer/Developer Install
 PyroCMS strips out the LESS folder if installed through the admin panel. So, if you want to keep the LESS files you will have to unzip and move the folder manually to the appropriate "themes" folder.
