@@ -7,7 +7,7 @@ class Theme_Bootstrap_Slim extends Theme {
     public $author_website = 'http://philsquare.com';
     public $website = 'http://philsquare.com';
     public $description = 'Basic theme using Twitter Bootstrap';
-    public $version = '1.0.3';
+    public $version = '1.0.4';
 
 }
 
